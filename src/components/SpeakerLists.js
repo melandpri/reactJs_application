@@ -1,5 +1,4 @@
 import React from "react";
-
 import SpeakerCard from "./SpeakerCard";
 
 function SpeakerLists() {

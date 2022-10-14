@@ -1,9 +1,12 @@
 import React from "react";
 import Session from "./Session";
+import ImageSpeaker from "./ImageSpeaker";
 
-function SpeakerUi({id,nom,prenom,bio,company,twitter}) {
+function SpeakerUi({id,nom,prenom,bio,company,twitter,sessions}) {
     return(
         <div className='ui card'>
+          <ImageSpeaker  id={id}/>
+
          
           <div className='content'>
             <span className='header'>
@@ -19,7 +22,7 @@ function SpeakerUi({id,nom,prenom,bio,company,twitter}) {
               </span>
             </div>
 
-            <Session/>
+            <Session  sessions={sessions} />
             <span>
               <i className='home icon'>{twitter}</i>
             </span>
